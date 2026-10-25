@@ -1,0 +1,1318 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta http-equiv="content-type" content="text/html; charset=utf-8"/>
+	<title></title>
+	<meta name="generator" content="LibreOffice 26.2.6.3 (Linux)"/>
+	<meta name="author" content="a hayze"/>
+	<meta name="created" content="2026-10-18T20:42:00"/>
+	<meta name="changedby" content="a hayze"/>
+	<meta name="changed" content="2026-10-25T15:27:00"/>
+	<meta name="AppVersion" content="16.0000"/>
+	<style type="text/css">
+		@page { size: 8.5in 11in; margin: 1in }
+		p { direction: ltr; margin-bottom: 0.1in; widows: 2; orphans: 2; text-align: left; line-height: 115%; background: transparent }
+	</style>
+</head>
+<body lang="en-US" link="#000080" vlink="#800000" dir="ltr"><p style="line-height: 116%; margin-bottom: 0.11in">
+&lt;!DOCTYPE html&gt;</p>
+<p style="line-height: 116%; margin-bottom: 0.11in">&lt;html
+lang=&quot;en&quot;&gt;</p>
+<p style="line-height: 116%; margin-bottom: 0.11in">&lt;head&gt;</p>
+<p style="line-height: 116%; margin-bottom: 0.11in">&nbsp; &nbsp;
+&lt;meta charset=&quot;UTF-8&quot;&gt;</p>
+<p style="line-height: 116%; margin-bottom: 0.11in">&nbsp; &nbsp;
+&lt;meta name=&quot;viewport&quot; content=&quot;width=device-width,
+initial-scale=1.0&quot;&gt;</p>
+<p style="line-height: 116%; margin-bottom: 0.11in">&nbsp; &nbsp;
+&lt;title&gt;OArt - Creative Community&lt;/title&gt;</p>
+<p style="line-height: 116%; margin-bottom: 0.11in">&nbsp; &nbsp;
+&lt;!-- Tailwind CSS --&gt;</p>
+<p style="line-height: 116%; margin-bottom: 0.11in">&nbsp; &nbsp;
+&lt;script src=&quot;https://cdn.tailwindcss.com&quot;&gt;&lt;/script&gt;</p>
+<p style="line-height: 116%; margin-bottom: 0.11in">&nbsp; &nbsp;
+&lt;!-- Font Awesome Icons --&gt;</p>
+<p style="line-height: 116%; margin-bottom: 0.11in">&nbsp; &nbsp;
+&lt;link rel=&quot;stylesheet&quot;
+href=&quot;https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css&quot;&gt;</p>
+<p style="line-height: 116%; margin-bottom: 0.11in">&nbsp; &nbsp;
+&lt;!-- Google Fonts --&gt;</p>
+<p style="line-height: 116%; margin-bottom: 0.11in">&nbsp; &nbsp;
+&lt;link rel=&quot;preconnect&quot;
+href=&quot;https://fonts.googleapis.com&quot;&gt;</p>
+<p style="line-height: 116%; margin-bottom: 0.11in">&nbsp; &nbsp;
+&lt;link rel=&quot;preconnect&quot; href=&quot;https://fonts.gstatic.com&quot;
+crossorigin&gt;</p>
+<p style="line-height: 116%; margin-bottom: 0.11in">&nbsp; &nbsp;
+&lt;link
+href=&quot;https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;600;700&amp;family=Plus+Jakarta+Sans:wght@400;500;600;700&amp;display=swap&quot;
+rel=&quot;stylesheet&quot;&gt;</p>
+<p style="line-height: 116%; margin-bottom: 0.11in">&nbsp; &nbsp; 
+</p>
+<p style="line-height: 116%; margin-bottom: 0.11in">&nbsp; &nbsp;
+&lt;script&gt;</p>
+<p style="line-height: 116%; margin-bottom: 0.11in">&nbsp; &nbsp; &nbsp;
+&nbsp; tailwind.config = {</p>
+<p style="line-height: 116%; margin-bottom: 0.11in">&nbsp; &nbsp; &nbsp;
+&nbsp; &nbsp; &nbsp; theme: {</p>
+<p style="line-height: 116%; margin-bottom: 0.11in">&nbsp; &nbsp; &nbsp;
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; extend: {</p>
+<p style="line-height: 116%; margin-bottom: 0.11in">&nbsp; &nbsp; &nbsp;
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; fontFamily: {</p>
+<p style="line-height: 116%; margin-bottom: 0.11in">&nbsp; &nbsp; &nbsp;
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; serif:
+['&quot;Playfair Display&quot;', 'serif'],</p>
+<p style="line-height: 116%; margin-bottom: 0.11in">&nbsp; &nbsp; &nbsp;
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; sans:
+['&quot;Plus Jakarta Sans&quot;', 'sans-serif'],</p>
+<p style="line-height: 116%; margin-bottom: 0.11in">&nbsp; &nbsp; &nbsp;
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; },</p>
+<p style="line-height: 116%; margin-bottom: 0.11in">&nbsp; &nbsp; &nbsp;
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; colors: {</p>
+<p style="line-height: 116%; margin-bottom: 0.11in">&nbsp; &nbsp; &nbsp;
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; oart:
+{</p>
+<p style="line-height: 116%; margin-bottom: 0.11in">&nbsp; &nbsp; &nbsp;
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+&nbsp; bg: '#F3ECF8',</p>
+<p style="line-height: 116%; margin-bottom: 0.11in">&nbsp; &nbsp; &nbsp;
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+&nbsp; surface: '#EAE1F4',</p>
+<p style="line-height: 116%; margin-bottom: 0.11in">&nbsp; &nbsp; &nbsp;
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+&nbsp; card: '#FFFFFF',</p>
+<p style="line-height: 116%; margin-bottom: 0.11in">&nbsp; &nbsp; &nbsp;
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+&nbsp; purple: '#2D1548',</p>
+<p style="line-height: 116%; margin-bottom: 0.11in">&nbsp; &nbsp; &nbsp;
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+&nbsp; accent: '#6B38AC',</p>
+<p style="line-height: 116%; margin-bottom: 0.11in">&nbsp; &nbsp; &nbsp;
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+&nbsp; lightPurple: '#DDD2EC'</p>
+<p style="line-height: 116%; margin-bottom: 0.11in">&nbsp; &nbsp; &nbsp;
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; }</p>
+<p style="line-height: 116%; margin-bottom: 0.11in">&nbsp; &nbsp; &nbsp;
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; }</p>
+<p style="line-height: 116%; margin-bottom: 0.11in">&nbsp; &nbsp; &nbsp;
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; }</p>
+<p style="line-height: 116%; margin-bottom: 0.11in">&nbsp; &nbsp; &nbsp;
+&nbsp; &nbsp; &nbsp; }</p>
+<p style="line-height: 116%; margin-bottom: 0.11in">&nbsp; &nbsp; &nbsp;
+&nbsp; }</p>
+<p style="line-height: 116%; margin-bottom: 0.11in">&nbsp; &nbsp;
+&lt;/script&gt;</p>
+<p style="line-height: 116%; margin-bottom: 0.11in">&nbsp; &nbsp;
+&lt;style&gt;</p>
+<p style="line-height: 116%; margin-bottom: 0.11in">&nbsp; &nbsp; &nbsp;
+&nbsp; .no-scrollbar::-webkit-scrollbar { display: none; }</p>
+<p style="line-height: 116%; margin-bottom: 0.11in">&nbsp; &nbsp; &nbsp;
+&nbsp; .no-scrollbar { -ms-overflow-style: none; scrollbar-width:
+none; }</p>
+<p style="line-height: 116%; margin-bottom: 0.11in">&nbsp; &nbsp; &nbsp;
+&nbsp; body { background-color: #F3ECF8; font-family: 'Plus Jakarta
+Sans', sans-serif; color: #2D1548; }</p>
+<p style="line-height: 116%; margin-bottom: 0.11in">&nbsp; &nbsp;
+&lt;/style&gt;</p>
+<p style="line-height: 116%; margin-bottom: 0.11in">&lt;/head&gt;</p>
+<p style="line-height: 116%; margin-bottom: 0.11in">&lt;body
+class=&quot;min-h-screen flex flex-col&quot;&gt;</p>
+<p style="line-height: 116%; margin-bottom: 0.11in"><br/>
+<br/>
+
+</p>
+<p style="line-height: 116%; margin-bottom: 0.11in">&nbsp; &nbsp;
+&lt;!-- Top Navigation Bar --&gt;</p>
+<p style="line-height: 116%; margin-bottom: 0.11in">&nbsp; &nbsp;
+&lt;header class=&quot;bg-[#F3ECF8]/90 backdrop-blur-md sticky top-0
+z-50 border-b border-purple-100/50&quot;&gt;</p>
+<p style="line-height: 116%; margin-bottom: 0.11in">&nbsp; &nbsp; &nbsp;
+&nbsp; &lt;div class=&quot;max-w-7xl mx-auto px-6 py-3 flex
+items-center justify-between gap-4&quot;&gt;</p>
+<p style="line-height: 116%; margin-bottom: 0.11in">&nbsp; &nbsp; &nbsp;
+&nbsp; &nbsp; &nbsp; &lt;!-- Brand Logo --&gt;</p>
+<p style="line-height: 116%; margin-bottom: 0.11in">&nbsp; &nbsp; &nbsp;
+&nbsp; &nbsp; &nbsp; &lt;div class=&quot;flex items-center gap-8&quot;&gt;</p>
+<p style="line-height: 116%; margin-bottom: 0.11in">&nbsp; &nbsp; &nbsp;
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &lt;a href=&quot;#&quot;
+onclick=&quot;showPage('home')&quot; class=&quot;font-serif text-3xl
+font-bold text-oart-purple tracking-tight hover:opacity-90
+transition-opacity&quot;&gt;</p>
+<p style="line-height: 116%; margin-bottom: 0.11in">&nbsp; &nbsp; &nbsp;
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; OArt</p>
+<p style="line-height: 116%; margin-bottom: 0.11in">&nbsp; &nbsp; &nbsp;
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &lt;/a&gt;</p>
+<p style="line-height: 116%; margin-bottom: 0.11in">&nbsp; &nbsp; &nbsp;
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; 
+</p>
+<p style="line-height: 116%; margin-bottom: 0.11in">&nbsp; &nbsp; &nbsp;
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &lt;!-- Main Nav Links --&gt;</p>
+<p style="line-height: 116%; margin-bottom: 0.11in">&nbsp; &nbsp; &nbsp;
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &lt;nav class=&quot;hidden md:flex
+items-center gap-6 font-medium text-sm&quot;&gt;</p>
+<p style="line-height: 116%; margin-bottom: 0.11in">&nbsp; &nbsp; &nbsp;
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &lt;button
+onclick=&quot;showPage('home')&quot; class=&quot;nav-link flex
+items-center gap-2 py-1 text-oart-purple border-b-2
+border-oart-purple font-semibold&quot; data-page=&quot;home&quot;&gt;</p>
+<p style="line-height: 116%; margin-bottom: 0.11in">&nbsp; &nbsp; &nbsp;
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &lt;i
+class=&quot;fa-solid fa-house text-xs&quot;&gt;&lt;/i&gt; Home</p>
+<p style="line-height: 116%; margin-bottom: 0.11in">&nbsp; &nbsp; &nbsp;
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &lt;/button&gt;</p>
+<p style="line-height: 116%; margin-bottom: 0.11in">&nbsp; &nbsp; &nbsp;
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &lt;button
+onclick=&quot;showPage('explore')&quot; class=&quot;nav-link flex
+items-center gap-2 py-1 text-slate-600 hover:text-oart-purple
+border-b-2 border-transparent transition-all&quot;
+data-page=&quot;explore&quot;&gt;</p>
+<p style="line-height: 116%; margin-bottom: 0.11in">&nbsp; &nbsp; &nbsp;
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &lt;i
+class=&quot;fa-solid fa-globe text-xs&quot;&gt;&lt;/i&gt; Explore</p>
+<p style="line-height: 116%; margin-bottom: 0.11in">&nbsp; &nbsp; &nbsp;
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &lt;/button&gt;</p>
+<p style="line-height: 116%; margin-bottom: 0.11in">&nbsp; &nbsp; &nbsp;
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &lt;button
+onclick=&quot;showPage('about')&quot; class=&quot;nav-link flex
+items-center gap-2 py-1 text-slate-600 hover:text-oart-purple
+border-b-2 border-transparent transition-all&quot; data-page=&quot;about&quot;&gt;</p>
+<p style="line-height: 116%; margin-bottom: 0.11in">&nbsp; &nbsp; &nbsp;
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; About
+Us</p>
+<p style="line-height: 116%; margin-bottom: 0.11in">&nbsp; &nbsp; &nbsp;
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &lt;/button&gt;</p>
+<p style="line-height: 116%; margin-bottom: 0.11in">&nbsp; &nbsp; &nbsp;
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &lt;button
+onclick=&quot;showPage('profile')&quot; class=&quot;nav-link flex
+items-center gap-2 py-1 text-slate-600 hover:text-oart-purple
+border-b-2 border-transparent transition-all&quot;
+data-page=&quot;profile&quot;&gt;</p>
+<p style="line-height: 116%; margin-bottom: 0.11in">&nbsp; &nbsp; &nbsp;
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &lt;i
+class=&quot;fa-regular fa-user text-xs&quot;&gt;&lt;/i&gt; Profile</p>
+<p style="line-height: 116%; margin-bottom: 0.11in">&nbsp; &nbsp; &nbsp;
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &lt;/button&gt;</p>
+<p style="line-height: 116%; margin-bottom: 0.11in">&nbsp; &nbsp; &nbsp;
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &lt;button
+onclick=&quot;showPage('faq')&quot; class=&quot;nav-link flex
+items-center gap-2 py-1 text-slate-600 hover:text-oart-purple
+border-b-2 border-transparent transition-all&quot; data-page=&quot;faq&quot;&gt;</p>
+<p style="line-height: 116%; margin-bottom: 0.11in">&nbsp; &nbsp; &nbsp;
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; FAQ</p>
+<p style="line-height: 116%; margin-bottom: 0.11in">&nbsp; &nbsp; &nbsp;
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &lt;/button&gt;</p>
+<p style="line-height: 116%; margin-bottom: 0.11in">&nbsp; &nbsp; &nbsp;
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &lt;button
+onclick=&quot;showPage('guide')&quot; class=&quot;nav-link flex
+items-center gap-2 py-1 text-slate-600 hover:text-oart-purple
+border-b-2 border-transparent transition-all&quot; data-page=&quot;guide&quot;&gt;</p>
+<p style="line-height: 116%; margin-bottom: 0.11in">&nbsp; &nbsp; &nbsp;
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; User
+guide</p>
+<p style="line-height: 116%; margin-bottom: 0.11in">&nbsp; &nbsp; &nbsp;
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &lt;/button&gt;</p>
+<p style="line-height: 116%; margin-bottom: 0.11in">&nbsp; &nbsp; &nbsp;
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &lt;/nav&gt;</p>
+<p style="line-height: 116%; margin-bottom: 0.11in">&nbsp; &nbsp; &nbsp;
+&nbsp; &nbsp; &nbsp; &lt;/div&gt;</p>
+<p style="line-height: 116%; margin-bottom: 0.11in"><br/>
+<br/>
+
+</p>
+<p style="line-height: 116%; margin-bottom: 0.11in">&nbsp; &nbsp; &nbsp;
+&nbsp; &nbsp; &nbsp; &lt;!-- Search Bar --&gt;</p>
+<p style="line-height: 116%; margin-bottom: 0.11in">&nbsp; &nbsp; &nbsp;
+&nbsp; &nbsp; &nbsp; &lt;div class=&quot;relative w-full max-w-xs&quot;&gt;</p>
+<p style="line-height: 116%; margin-bottom: 0.11in">&nbsp; &nbsp; &nbsp;
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &lt;i class=&quot;fa-solid
+fa-magnifying-glass absolute left-3.5 top-1/2 -translate-y-1/2
+text-slate-400 text-xs&quot;&gt;&lt;/i&gt;</p>
+<p style="line-height: 116%; margin-bottom: 0.11in">&nbsp; &nbsp; &nbsp;
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &lt;input type=&quot;text&quot; 
+</p>
+<p style="line-height: 116%; margin-bottom: 0.11in">&nbsp; &nbsp; &nbsp;
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+&nbsp;placeholder=&quot;Search artwork...&quot; 
+</p>
+<p style="line-height: 116%; margin-bottom: 0.11in">&nbsp; &nbsp; &nbsp;
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+&nbsp;class=&quot;w-full bg-white/80 focus:bg-white transition-all
+rounded-full py-2 pl-9 pr-4 text-xs text-slate-800
+placeholder-slate-400 outline-none border border-slate-200/80
+shadow-sm focus:ring-2 focus:ring-purple-300&quot;&gt;</p>
+<p style="line-height: 116%; margin-bottom: 0.11in">&nbsp; &nbsp; &nbsp;
+&nbsp; &nbsp; &nbsp; &lt;/div&gt;</p>
+<p style="line-height: 116%; margin-bottom: 0.11in">&nbsp; &nbsp; &nbsp;
+&nbsp; &lt;/div&gt;</p>
+<p style="line-height: 116%; margin-bottom: 0.11in"><br/>
+<br/>
+
+</p>
+<p style="line-height: 116%; margin-bottom: 0.11in">&nbsp; &nbsp; &nbsp;
+&nbsp; &lt;!-- Mobile Navigation Row --&gt;</p>
+<p style="line-height: 116%; margin-bottom: 0.11in">&nbsp; &nbsp; &nbsp;
+&nbsp; &lt;div class=&quot;md:hidden flex items-center
+justify-between px-4 py-2 border-t border-purple-100 overflow-x-auto
+text-xs font-medium space-x-4 no-scrollbar&quot;&gt;</p>
+<p style="line-height: 116%; margin-bottom: 0.11in">&nbsp; &nbsp; &nbsp;
+&nbsp; &nbsp; &nbsp; &lt;button onclick=&quot;showPage('home')&quot;
+class=&quot;whitespace-nowrap text-oart-purple
+font-semibold&quot;&gt;Home&lt;/button&gt;</p>
+<p style="line-height: 116%; margin-bottom: 0.11in">&nbsp; &nbsp; &nbsp;
+&nbsp; &nbsp; &nbsp; &lt;button onclick=&quot;showPage('explore')&quot;
+class=&quot;whitespace-nowrap text-slate-600&quot;&gt;Explore&lt;/button&gt;</p>
+<p style="line-height: 116%; margin-bottom: 0.11in">&nbsp; &nbsp; &nbsp;
+&nbsp; &nbsp; &nbsp; &lt;button onclick=&quot;showPage('about')&quot;
+class=&quot;whitespace-nowrap text-slate-600&quot;&gt;About
+Us&lt;/button&gt;</p>
+<p style="line-height: 116%; margin-bottom: 0.11in">&nbsp; &nbsp; &nbsp;
+&nbsp; &nbsp; &nbsp; &lt;button onclick=&quot;showPage('profile')&quot;
+class=&quot;whitespace-nowrap text-slate-600&quot;&gt;Profile&lt;/button&gt;</p>
+<p style="line-height: 116%; margin-bottom: 0.11in">&nbsp; &nbsp; &nbsp;
+&nbsp; &nbsp; &nbsp; &lt;button onclick=&quot;showPage('faq')&quot;
+class=&quot;whitespace-nowrap text-slate-600&quot;&gt;FAQ&lt;/button&gt;</p>
+<p style="line-height: 116%; margin-bottom: 0.11in">&nbsp; &nbsp; &nbsp;
+&nbsp; &nbsp; &nbsp; &lt;button onclick=&quot;showPage('guide')&quot;
+class=&quot;whitespace-nowrap text-slate-600&quot;&gt;User
+guide&lt;/button&gt;</p>
+<p style="line-height: 116%; margin-bottom: 0.11in">&nbsp; &nbsp; &nbsp;
+&nbsp; &lt;/div&gt;</p>
+<p style="line-height: 116%; margin-bottom: 0.11in">&nbsp; &nbsp;
+&lt;/header&gt;</p>
+<p style="line-height: 116%; margin-bottom: 0.11in"><br/>
+<br/>
+
+</p>
+<p style="line-height: 116%; margin-bottom: 0.11in">&nbsp; &nbsp;
+&lt;!-- Main Container Area --&gt;</p>
+<p style="line-height: 116%; margin-bottom: 0.11in">&nbsp; &nbsp;
+&lt;main class=&quot;flex-1 max-w-7xl w-full mx-auto px-4 sm:px-6
+py-6&quot;&gt;</p>
+<p style="line-height: 116%; margin-bottom: 0.11in"><br/>
+<br/>
+
+</p>
+<p style="line-height: 116%; margin-bottom: 0.11in">&nbsp; &nbsp; &nbsp;
+&nbsp; &lt;!-- ================= PAGE 1: HOME ================= --&gt;</p>
+<p style="line-height: 116%; margin-bottom: 0.11in">&nbsp; &nbsp; &nbsp;
+&nbsp; &lt;section id=&quot;page-home&quot; class=&quot;page-content
+space-y-8&quot;&gt;</p>
+<p style="line-height: 116%; margin-bottom: 0.11in">&nbsp; &nbsp; &nbsp;
+&nbsp; &nbsp; &nbsp; &lt;!-- Hero Artwork Banner --&gt;</p>
+<p style="line-height: 116%; margin-bottom: 0.11in">&nbsp; &nbsp; &nbsp;
+&nbsp; &nbsp; &nbsp; &lt;div class=&quot;flex gap-4 overflow-x-auto
+no-scrollbar rounded-2xl&quot;&gt;</p>
+<p style="line-height: 116%; margin-bottom: 0.11in">&nbsp; &nbsp; &nbsp;
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &lt;div class=&quot;w-full
+md:w-[85%] shrink-0 h-52 sm:h-64 md:h-72 rounded-2xl overflow-hidden
+shadow-sm relative&quot;&gt;</p>
+<p style="line-height: 116%; margin-bottom: 0.11in">&nbsp; &nbsp; &nbsp;
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &lt;img
+src=&quot;https://images.unsplash.com/photo-1541701494587-cb58502866ab?auto=format&amp;fit=crop&amp;w=1400&amp;q=80&quot;
+</p>
+<p style="line-height: 116%; margin-bottom: 0.11in">&nbsp; &nbsp; &nbsp;
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+&nbsp;alt=&quot;Abstract Paint&quot; class=&quot;w-full h-full
+object-cover&quot;&gt;</p>
+<p style="line-height: 116%; margin-bottom: 0.11in">&nbsp; &nbsp; &nbsp;
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &lt;/div&gt;</p>
+<p style="line-height: 116%; margin-bottom: 0.11in">&nbsp; &nbsp; &nbsp;
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &lt;div class=&quot;hidden
+md:block w-[15%] shrink-0 h-72 rounded-2xl overflow-hidden
+shadow-sm&quot;&gt;</p>
+<p style="line-height: 116%; margin-bottom: 0.11in">&nbsp; &nbsp; &nbsp;
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &lt;img
+src=&quot;https://images.unsplash.com/photo-1579783902614-a3fb3927b675?auto=format&amp;fit=crop&amp;w=600&amp;q=80&quot;
+</p>
+<p style="line-height: 116%; margin-bottom: 0.11in">&nbsp; &nbsp; &nbsp;
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+&nbsp;alt=&quot;Creative Art Detail&quot; class=&quot;w-full h-full
+object-cover&quot;&gt;</p>
+<p style="line-height: 116%; margin-bottom: 0.11in">&nbsp; &nbsp; &nbsp;
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &lt;/div&gt;</p>
+<p style="line-height: 116%; margin-bottom: 0.11in">&nbsp; &nbsp; &nbsp;
+&nbsp; &nbsp; &nbsp; &lt;/div&gt;</p>
+<p style="line-height: 116%; margin-bottom: 0.11in"><br/>
+<br/>
+
+</p>
+<p style="line-height: 116%; margin-bottom: 0.11in">&nbsp; &nbsp; &nbsp;
+&nbsp; &nbsp; &nbsp; &lt;!-- Page Headline --&gt;</p>
+<p style="line-height: 116%; margin-bottom: 0.11in">&nbsp; &nbsp; &nbsp;
+&nbsp; &nbsp; &nbsp; &lt;div class=&quot;pt-2&quot;&gt;</p>
+<p style="line-height: 116%; margin-bottom: 0.11in">&nbsp; &nbsp; &nbsp;
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &lt;h1 class=&quot;text-2xl
+sm:text-3xl md:text-4xl font-bold text-oart-purple tracking-tight&quot;&gt;</p>
+<p style="line-height: 116%; margin-bottom: 0.11in">&nbsp; &nbsp; &nbsp;
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; OArt Community -
+Arts, Ideas, Connections</p>
+<p style="line-height: 116%; margin-bottom: 0.11in">&nbsp; &nbsp; &nbsp;
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &lt;/h1&gt;</p>
+<p style="line-height: 116%; margin-bottom: 0.11in">&nbsp; &nbsp; &nbsp;
+&nbsp; &nbsp; &nbsp; &lt;/div&gt;</p>
+<p style="line-height: 116%; margin-bottom: 0.11in"><br/>
+<br/>
+
+</p>
+<p style="line-height: 116%; margin-bottom: 0.11in">&nbsp; &nbsp; &nbsp;
+&nbsp; &nbsp; &nbsp; &lt;!-- Featured Profiles --&gt;</p>
+<p style="line-height: 116%; margin-bottom: 0.11in">&nbsp; &nbsp; &nbsp;
+&nbsp; &nbsp; &nbsp; &lt;div class=&quot;grid grid-cols-1
+sm:grid-cols-2 gap-6 max-w-2xl&quot;&gt;</p>
+<p style="line-height: 116%; margin-bottom: 0.11in">&nbsp; &nbsp; &nbsp;
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &lt;!-- Artist 1 --&gt;</p>
+<p style="line-height: 116%; margin-bottom: 0.11in">&nbsp; &nbsp; &nbsp;
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &lt;div class=&quot;flex
+items-center gap-4 bg-white/40 p-3 rounded-2xl border
+border-white/60&quot;&gt;</p>
+<p style="line-height: 116%; margin-bottom: 0.11in">&nbsp; &nbsp; &nbsp;
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &lt;img
+src=&quot;https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&amp;fit=crop&amp;w=200&amp;q=80&quot;
+</p>
+<p style="line-height: 116%; margin-bottom: 0.11in">&nbsp; &nbsp; &nbsp;
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+&nbsp;alt=&quot;Artist&quot; class=&quot;w-16 h-16 rounded-full
+object-cover border-2 border-white shadow-sm&quot;&gt;</p>
+<p style="line-height: 116%; margin-bottom: 0.11in">&nbsp; &nbsp; &nbsp;
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &lt;div&gt;</p>
+<p style="line-height: 116%; margin-bottom: 0.11in">&nbsp; &nbsp; &nbsp;
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &lt;h3
+class=&quot;font-bold text-base text-oart-purple&quot;&gt;Artist&lt;/h3&gt;</p>
+<p style="line-height: 116%; margin-bottom: 0.11in">&nbsp; &nbsp; &nbsp;
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &lt;p
+class=&quot;text-xs text-slate-600&quot;&gt;Artist&lt;/p&gt;</p>
+<p style="line-height: 116%; margin-bottom: 0.11in">&nbsp; &nbsp; &nbsp;
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &lt;/div&gt;</p>
+<p style="line-height: 116%; margin-bottom: 0.11in">&nbsp; &nbsp; &nbsp;
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &lt;/div&gt;</p>
+<p style="line-height: 116%; margin-bottom: 0.11in"><br/>
+<br/>
+
+</p>
+<p style="line-height: 116%; margin-bottom: 0.11in">&nbsp; &nbsp; &nbsp;
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &lt;!-- Artist 2 --&gt;</p>
+<p style="line-height: 116%; margin-bottom: 0.11in">&nbsp; &nbsp; &nbsp;
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &lt;div class=&quot;flex
+items-center gap-4 bg-white/40 p-3 rounded-2xl border
+border-white/60&quot;&gt;</p>
+<p style="line-height: 116%; margin-bottom: 0.11in">&nbsp; &nbsp; &nbsp;
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &lt;img
+src=&quot;https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&amp;fit=crop&amp;w=200&amp;q=80&quot;
+</p>
+<p style="line-height: 116%; margin-bottom: 0.11in">&nbsp; &nbsp; &nbsp;
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+&nbsp;alt=&quot;Leona&quot; class=&quot;w-16 h-16 rounded-full
+object-cover border-2 border-white shadow-sm&quot;&gt;</p>
+<p style="line-height: 116%; margin-bottom: 0.11in">&nbsp; &nbsp; &nbsp;
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &lt;div&gt;</p>
+<p style="line-height: 116%; margin-bottom: 0.11in">&nbsp; &nbsp; &nbsp;
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &lt;h3
+class=&quot;font-bold text-base text-oart-purple&quot;&gt;Leona&lt;/h3&gt;</p>
+<p style="line-height: 116%; margin-bottom: 0.11in">&nbsp; &nbsp; &nbsp;
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &lt;p
+class=&quot;text-xs text-slate-600&quot;&gt;Profile&lt;/p&gt;</p>
+<p style="line-height: 116%; margin-bottom: 0.11in">&nbsp; &nbsp; &nbsp;
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &lt;/div&gt;</p>
+<p style="line-height: 116%; margin-bottom: 0.11in">&nbsp; &nbsp; &nbsp;
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &lt;/div&gt;</p>
+<p style="line-height: 116%; margin-bottom: 0.11in">&nbsp; &nbsp; &nbsp;
+&nbsp; &nbsp; &nbsp; &lt;/div&gt;</p>
+<p style="line-height: 116%; margin-bottom: 0.11in"><br/>
+<br/>
+
+</p>
+<p style="line-height: 116%; margin-bottom: 0.11in">&nbsp; &nbsp; &nbsp;
+&nbsp; &nbsp; &nbsp; &lt;!-- Collaboration Feeds Grid --&gt;</p>
+<p style="line-height: 116%; margin-bottom: 0.11in">&nbsp; &nbsp; &nbsp;
+&nbsp; &nbsp; &nbsp; &lt;div class=&quot;grid grid-cols-1
+md:grid-cols-2 gap-6 pt-2&quot;&gt;</p>
+<p style="line-height: 116%; margin-bottom: 0.11in">&nbsp; &nbsp; &nbsp;
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; 
+</p>
+<p style="line-height: 116%; margin-bottom: 0.11in">&nbsp; &nbsp; &nbsp;
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &lt;!-- Feed Column 1 --&gt;</p>
+<p style="line-height: 116%; margin-bottom: 0.11in">&nbsp; &nbsp; &nbsp;
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &lt;div class=&quot;space-y-3&quot;&gt;</p>
+<p style="line-height: 116%; margin-bottom: 0.11in">&nbsp; &nbsp; &nbsp;
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &lt;h2
+class=&quot;font-bold text-base text-oart-purple&quot;&gt;Open
+Collaboration Project Feed&lt;/h2&gt;</p>
+<p style="line-height: 116%; margin-bottom: 0.11in">&nbsp; &nbsp; &nbsp;
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &lt;div
+class=&quot;bg-white rounded-2xl p-3 shadow-sm border
+border-purple-100 flex flex-col sm:flex-row gap-4&quot;&gt;</p>
+<p style="line-height: 116%; margin-bottom: 0.11in">&nbsp; &nbsp; &nbsp;
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &lt;img
+src=&quot;https://images.unsplash.com/photo-1522071820081-009f0129c71c?auto=format&amp;fit=crop&amp;w=500&amp;q=80&quot;
+</p>
+<p style="line-height: 116%; margin-bottom: 0.11in">&nbsp; &nbsp; &nbsp;
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+&nbsp; &nbsp;alt=&quot;Collaboration&quot; class=&quot;w-full sm:w-44
+h-32 rounded-xl object-cover&quot;&gt;</p>
+<p style="line-height: 116%; margin-bottom: 0.11in">&nbsp; &nbsp; &nbsp;
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &lt;div
+class=&quot;flex flex-col justify-between py-1 space-y-2&quot;&gt;</p>
+<p style="line-height: 116%; margin-bottom: 0.11in">&nbsp; &nbsp; &nbsp;
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+&nbsp; &lt;div&gt;</p>
+<p style="line-height: 116%; margin-bottom: 0.11in">&nbsp; &nbsp; &nbsp;
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+&nbsp; &nbsp; &nbsp; &lt;h3 class=&quot;font-bold text-sm
+text-oart-purple&quot;&gt;Project: Global Mural&lt;/h3&gt;</p>
+<p style="line-height: 116%; margin-bottom: 0.11in">&nbsp; &nbsp; &nbsp;
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+&nbsp; &nbsp; &nbsp; &lt;p class=&quot;text-xs text-slate-700 mt-1
+leading-snug&quot;&gt;</p>
+<p style="line-height: 116%; margin-bottom: 0.11in">&nbsp; &nbsp; &nbsp;
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; A massive collaborative mural
+visible for your digital art and ideas.</p>
+<p style="line-height: 116%; margin-bottom: 0.11in">&nbsp; &nbsp; &nbsp;
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+&nbsp; &nbsp; &nbsp; &lt;/p&gt;</p>
+<p style="line-height: 116%; margin-bottom: 0.11in">&nbsp; &nbsp; &nbsp;
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+&nbsp; &lt;/div&gt;</p>
+<p style="line-height: 116%; margin-bottom: 0.11in">&nbsp; &nbsp; &nbsp;
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+&nbsp; &lt;p class=&quot;text-[11px] text-slate-500 leading-snug&quot;&gt;</p>
+<p style="line-height: 116%; margin-bottom: 0.11in">&nbsp; &nbsp; &nbsp;
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+&nbsp; &nbsp; &nbsp; Artists worldwide welcome all styles and stages.
+Add your piece to the wall.</p>
+<p style="line-height: 116%; margin-bottom: 0.11in">&nbsp; &nbsp; &nbsp;
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+&nbsp; &lt;/p&gt;</p>
+<p style="line-height: 116%; margin-bottom: 0.11in">&nbsp; &nbsp; &nbsp;
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &lt;/div&gt;</p>
+<p style="line-height: 116%; margin-bottom: 0.11in">&nbsp; &nbsp; &nbsp;
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &lt;/div&gt;</p>
+<p style="line-height: 116%; margin-bottom: 0.11in">&nbsp; &nbsp; &nbsp;
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &lt;/div&gt;</p>
+<p style="line-height: 116%; margin-bottom: 0.11in"><br/>
+<br/>
+
+</p>
+<p style="line-height: 116%; margin-bottom: 0.11in">&nbsp; &nbsp; &nbsp;
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &lt;!-- Feed Column 2 --&gt;</p>
+<p style="line-height: 116%; margin-bottom: 0.11in">&nbsp; &nbsp; &nbsp;
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &lt;div class=&quot;space-y-3&quot;&gt;</p>
+<p style="line-height: 116%; margin-bottom: 0.11in">&nbsp; &nbsp; &nbsp;
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &lt;h2
+class=&quot;font-bold text-base text-oart-purple&quot;&gt;Open
+Collaboration Project Feed&lt;/h2&gt;</p>
+<p style="line-height: 116%; margin-bottom: 0.11in">&nbsp; &nbsp; &nbsp;
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &lt;div
+class=&quot;bg-white rounded-2xl p-3 shadow-sm border
+border-purple-100 flex flex-col sm:flex-row gap-4&quot;&gt;</p>
+<p style="line-height: 116%; margin-bottom: 0.11in">&nbsp; &nbsp; &nbsp;
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &lt;img
+src=&quot;https://images.unsplash.com/photo-1579783900882-c0d3dad7b119?auto=format&amp;fit=crop&amp;w=500&amp;q=80&quot;
+</p>
+<p style="line-height: 116%; margin-bottom: 0.11in">&nbsp; &nbsp; &nbsp;
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+&nbsp; &nbsp;alt=&quot;Abstract Collaboration&quot; class=&quot;w-full
+sm:w-44 h-32 rounded-xl object-cover&quot;&gt;</p>
+<p style="line-height: 116%; margin-bottom: 0.11in">&nbsp; &nbsp; &nbsp;
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &lt;div
+class=&quot;flex flex-col justify-between py-1 space-y-2&quot;&gt;</p>
+<p style="line-height: 116%; margin-bottom: 0.11in">&nbsp; &nbsp; &nbsp;
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+&nbsp; &lt;div&gt;</p>
+<p style="line-height: 116%; margin-bottom: 0.11in">&nbsp; &nbsp; &nbsp;
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+&nbsp; &nbsp; &nbsp; &lt;h3 class=&quot;font-bold text-sm
+text-oart-purple&quot;&gt;Project: Global Mural&lt;/h3&gt;</p>
+<p style="line-height: 116%; margin-bottom: 0.11in">&nbsp; &nbsp; &nbsp;
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+&nbsp; &nbsp; &nbsp; &lt;p class=&quot;text-xs text-slate-700 mt-1
+leading-snug&quot;&gt;</p>
+<p style="line-height: 116%; margin-bottom: 0.11in">&nbsp; &nbsp; &nbsp;
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; A massive collaborative mural
+project for your digital art and ideas.</p>
+<p style="line-height: 116%; margin-bottom: 0.11in">&nbsp; &nbsp; &nbsp;
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+&nbsp; &nbsp; &nbsp; &lt;/p&gt;</p>
+<p style="line-height: 116%; margin-bottom: 0.11in">&nbsp; &nbsp; &nbsp;
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+&nbsp; &lt;/div&gt;</p>
+<p style="line-height: 116%; margin-bottom: 0.11in">&nbsp; &nbsp; &nbsp;
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+&nbsp; &lt;p class=&quot;text-[11px] text-slate-500 leading-snug&quot;&gt;</p>
+<p style="line-height: 116%; margin-bottom: 0.11in">&nbsp; &nbsp; &nbsp;
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+&nbsp; &nbsp; &nbsp; Artists worldwide unite to co-create art, share
+ideas, and inspire. Weekly meetings starting this week.</p>
+<p style="line-height: 116%; margin-bottom: 0.11in">&nbsp; &nbsp; &nbsp;
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+&nbsp; &lt;/p&gt;</p>
+<p style="line-height: 116%; margin-bottom: 0.11in">&nbsp; &nbsp; &nbsp;
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &lt;/div&gt;</p>
+<p style="line-height: 116%; margin-bottom: 0.11in">&nbsp; &nbsp; &nbsp;
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &lt;/div&gt;</p>
+<p style="line-height: 116%; margin-bottom: 0.11in">&nbsp; &nbsp; &nbsp;
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &lt;/div&gt;</p>
+<p style="line-height: 116%; margin-bottom: 0.11in"><br/>
+<br/>
+
+</p>
+<p style="line-height: 116%; margin-bottom: 0.11in">&nbsp; &nbsp; &nbsp;
+&nbsp; &nbsp; &nbsp; &lt;/div&gt;</p>
+<p style="line-height: 116%; margin-bottom: 0.11in">&nbsp; &nbsp; &nbsp;
+&nbsp; &lt;/section&gt;</p>
+<p style="line-height: 116%; margin-bottom: 0.11in"><br/>
+<br/>
+
+</p>
+<p style="line-height: 116%; margin-bottom: 0.11in">&nbsp; &nbsp; &nbsp;
+&nbsp; &lt;!-- ================= PAGE 2: EXPLORE =================
+--&gt;</p>
+<p style="line-height: 116%; margin-bottom: 0.11in">&nbsp; &nbsp; &nbsp;
+&nbsp; &lt;section id=&quot;page-explore&quot; class=&quot;page-content
+hidden space-y-8 py-10&quot;&gt;</p>
+<p style="line-height: 116%; margin-bottom: 0.11in">&nbsp; &nbsp; &nbsp;
+&nbsp; &nbsp; &nbsp; &lt;div class=&quot;text-center space-y-3
+max-w-xl mx-auto&quot;&gt;</p>
+<p style="line-height: 116%; margin-bottom: 0.11in">&nbsp; &nbsp; &nbsp;
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &lt;span class=&quot;text-xs
+font-semibold uppercase tracking-wider text-purple-600 bg-purple-100
+px-3 py-1 rounded-full&quot;&gt;Explore&lt;/span&gt;</p>
+<p style="line-height: 116%; margin-bottom: 0.11in">&nbsp; &nbsp; &nbsp;
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &lt;h1 class=&quot;text-3xl
+sm:text-4xl font-bold text-oart-purple&quot;&gt;Discover creators and
+their work&lt;/h1&gt;</p>
+<p style="line-height: 116%; margin-bottom: 0.11in">&nbsp; &nbsp; &nbsp;
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &lt;p class=&quot;text-slate-600
+text-sm&quot;&gt;Browse galleries, explore original concepts, and
+find collaborators across disciplines.&lt;/p&gt;</p>
+<p style="line-height: 116%; margin-bottom: 0.11in">&nbsp; &nbsp; &nbsp;
+&nbsp; &nbsp; &nbsp; &lt;/div&gt;</p>
+<p style="line-height: 116%; margin-bottom: 0.11in"><br/>
+<br/>
+
+</p>
+<p style="line-height: 116%; margin-bottom: 0.11in">&nbsp; &nbsp; &nbsp;
+&nbsp; &nbsp; &nbsp; &lt;!-- Coming Soon Container --&gt;</p>
+<p style="line-height: 116%; margin-bottom: 0.11in">&nbsp; &nbsp; &nbsp;
+&nbsp; &nbsp; &nbsp; &lt;div class=&quot;bg-white/60 border
+border-white/80 rounded-3xl p-12 text-center max-w-md mx-auto
+shadow-sm space-y-4&quot;&gt;</p>
+<p style="line-height: 116%; margin-bottom: 0.11in">&nbsp; &nbsp; &nbsp;
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &lt;div class=&quot;w-16 h-16
+bg-purple-100 text-oart-accent rounded-full flex items-center
+justify-center mx-auto text-2xl&quot;&gt;</p>
+<p style="line-height: 116%; margin-bottom: 0.11in">&nbsp; &nbsp; &nbsp;
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &lt;i
+class=&quot;fa-solid fa-compass&quot;&gt;&lt;/i&gt;</p>
+<p style="line-height: 116%; margin-bottom: 0.11in">&nbsp; &nbsp; &nbsp;
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &lt;/div&gt;</p>
+<p style="line-height: 116%; margin-bottom: 0.11in">&nbsp; &nbsp; &nbsp;
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &lt;h2 class=&quot;text-2xl
+font-bold text-oart-purple tracking-widest uppercase&quot;&gt;Coming
+Soon&lt;/h2&gt;</p>
+<p style="line-height: 116%; margin-bottom: 0.11in">&nbsp; &nbsp; &nbsp;
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &lt;p class=&quot;text-xs
+text-slate-600&quot;&gt;We are currently curating new creator
+showcases and open collaborative canvases.&lt;/p&gt;</p>
+<p style="line-height: 116%; margin-bottom: 0.11in">&nbsp; &nbsp; &nbsp;
+&nbsp; &nbsp; &nbsp; &lt;/div&gt;</p>
+<p style="line-height: 116%; margin-bottom: 0.11in">&nbsp; &nbsp; &nbsp;
+&nbsp; &lt;/section&gt;</p>
+<p style="line-height: 116%; margin-bottom: 0.11in"><br/>
+<br/>
+
+</p>
+<p style="line-height: 116%; margin-bottom: 0.11in">&nbsp; &nbsp; &nbsp;
+&nbsp; &lt;!-- ================= PAGE 3: ABOUT US =================
+--&gt;</p>
+<p style="line-height: 116%; margin-bottom: 0.11in">&nbsp; &nbsp; &nbsp;
+&nbsp; &lt;section id=&quot;page-about&quot; class=&quot;page-content
+hidden space-y-10 py-4&quot;&gt;</p>
+<p style="line-height: 116%; margin-bottom: 0.11in">&nbsp; &nbsp; &nbsp;
+&nbsp; &nbsp; &nbsp; &lt;!-- Hero Banner --&gt;</p>
+<p style="line-height: 116%; margin-bottom: 0.11in">&nbsp; &nbsp; &nbsp;
+&nbsp; &nbsp; &nbsp; &lt;div class=&quot;w-full h-44 sm:h-52
+rounded-2xl overflow-hidden shadow-sm&quot;&gt;</p>
+<p style="line-height: 116%; margin-bottom: 0.11in">&nbsp; &nbsp; &nbsp;
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &lt;img
+src=&quot;https://images.unsplash.com/photo-1541701494587-cb58502866ab?auto=format&amp;fit=crop&amp;w=1400&amp;q=80&quot;
+</p>
+<p style="line-height: 116%; margin-bottom: 0.11in">&nbsp; &nbsp; &nbsp;
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;alt=&quot;About
+OArt Banner&quot; class=&quot;w-full h-full object-cover&quot;&gt;</p>
+<p style="line-height: 116%; margin-bottom: 0.11in">&nbsp; &nbsp; &nbsp;
+&nbsp; &nbsp; &nbsp; &lt;/div&gt;</p>
+<p style="line-height: 116%; margin-bottom: 0.11in"><br/>
+<br/>
+
+</p>
+<p style="line-height: 116%; margin-bottom: 0.11in">&nbsp; &nbsp; &nbsp;
+&nbsp; &nbsp; &nbsp; &lt;div class=&quot;space-y-2&quot;&gt;</p>
+<p style="line-height: 116%; margin-bottom: 0.11in">&nbsp; &nbsp; &nbsp;
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &lt;h1 class=&quot;text-3xl
+font-bold text-oart-purple&quot;&gt;About OArt&lt;/h1&gt;</p>
+<p style="line-height: 116%; margin-bottom: 0.11in">&nbsp; &nbsp; &nbsp;
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &lt;p class=&quot;text-lg
+text-purple-900 font-medium&quot;&gt;Arts, Ideas, Connections&lt;/p&gt;</p>
+<p style="line-height: 116%; margin-bottom: 0.11in">&nbsp; &nbsp; &nbsp;
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &lt;p class=&quot;text-sm
+text-slate-700 max-w-3xl leading-relaxed&quot;&gt;</p>
+<p style="line-height: 116%; margin-bottom: 0.11in">&nbsp; &nbsp; &nbsp;
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; OArt brings creative
+people together through art and ideas. Open collaboration projects
+give the community a shared place to create.</p>
+<p style="line-height: 116%; margin-bottom: 0.11in">&nbsp; &nbsp; &nbsp;
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &lt;/p&gt;</p>
+<p style="line-height: 116%; margin-bottom: 0.11in">&nbsp; &nbsp; &nbsp;
+&nbsp; &nbsp; &nbsp; &lt;/div&gt;</p>
+<p style="line-height: 116%; margin-bottom: 0.11in"><br/>
+<br/>
+
+</p>
+<p style="line-height: 116%; margin-bottom: 0.11in">&nbsp; &nbsp; &nbsp;
+&nbsp; &nbsp; &nbsp; &lt;!-- Feature Cards Grid --&gt;</p>
+<p style="line-height: 116%; margin-bottom: 0.11in">&nbsp; &nbsp; &nbsp;
+&nbsp; &nbsp; &nbsp; &lt;div class=&quot;grid grid-cols-1
+md:grid-cols-3 gap-6&quot;&gt;</p>
+<p style="line-height: 116%; margin-bottom: 0.11in">&nbsp; &nbsp; &nbsp;
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &lt;div class=&quot;bg-white/70
+backdrop-blur-sm p-6 rounded-2xl border border-white shadow-sm
+space-y-2&quot;&gt;</p>
+<p style="line-height: 116%; margin-bottom: 0.11in">&nbsp; &nbsp; &nbsp;
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &lt;h3
+class=&quot;font-bold text-base text-oart-purple&quot;&gt;Our
+community&lt;/h3&gt;</p>
+<p style="line-height: 116%; margin-bottom: 0.11in">&nbsp; &nbsp; &nbsp;
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &lt;p class=&quot;text-xs
+text-slate-600 leading-relaxed&quot;&gt;A place for artists to meet
+through their work and share original creative visions.&lt;/p&gt;</p>
+<p style="line-height: 116%; margin-bottom: 0.11in">&nbsp; &nbsp; &nbsp;
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &lt;/div&gt;</p>
+<p style="line-height: 116%; margin-bottom: 0.11in">&nbsp; &nbsp; &nbsp;
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &lt;div class=&quot;bg-white/70
+backdrop-blur-sm p-6 rounded-2xl border border-white shadow-sm
+space-y-2&quot;&gt;</p>
+<p style="line-height: 116%; margin-bottom: 0.11in">&nbsp; &nbsp; &nbsp;
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &lt;h3
+class=&quot;font-bold text-base text-oart-purple&quot;&gt;Create
+together&lt;/h3&gt;</p>
+<p style="line-height: 116%; margin-bottom: 0.11in">&nbsp; &nbsp; &nbsp;
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &lt;p class=&quot;text-xs
+text-slate-600 leading-relaxed&quot;&gt;Share digital art, vocal
+work, graphics, soundscapes and whatever else you imagine.&lt;/p&gt;</p>
+<p style="line-height: 116%; margin-bottom: 0.11in">&nbsp; &nbsp; &nbsp;
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &lt;/div&gt;</p>
+<p style="line-height: 116%; margin-bottom: 0.11in">&nbsp; &nbsp; &nbsp;
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &lt;div class=&quot;bg-white/70
+backdrop-blur-sm p-6 rounded-2xl border border-white shadow-sm
+space-y-2&quot;&gt;</p>
+<p style="line-height: 116%; margin-bottom: 0.11in">&nbsp; &nbsp; &nbsp;
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &lt;h3
+class=&quot;font-bold text-base text-oart-purple&quot;&gt;Creativity
+in many forms&lt;/h3&gt;</p>
+<p style="line-height: 116%; margin-bottom: 0.11in">&nbsp; &nbsp; &nbsp;
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &lt;p class=&quot;text-xs
+text-slate-600 leading-relaxed&quot;&gt;A community built entirely
+around original human work and open collaboration.&lt;/p&gt;</p>
+<p style="line-height: 116%; margin-bottom: 0.11in">&nbsp; &nbsp; &nbsp;
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &lt;/div&gt;</p>
+<p style="line-height: 116%; margin-bottom: 0.11in">&nbsp; &nbsp; &nbsp;
+&nbsp; &nbsp; &nbsp; &lt;/div&gt;</p>
+<p style="line-height: 116%; margin-bottom: 0.11in"><br/>
+<br/>
+
+</p>
+<p style="line-height: 116%; margin-bottom: 0.11in">&nbsp; &nbsp; &nbsp;
+&nbsp; &nbsp; &nbsp; &lt;!-- Join Team Box --&gt;</p>
+<p style="line-height: 116%; margin-bottom: 0.11in">&nbsp; &nbsp; &nbsp;
+&nbsp; &nbsp; &nbsp; &lt;div class=&quot;bg-oart-purple text-white
+p-6 sm:p-8 rounded-2xl flex flex-col sm:flex-row items-center
+justify-between gap-4&quot;&gt;</p>
+<p style="line-height: 116%; margin-bottom: 0.11in">&nbsp; &nbsp; &nbsp;
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &lt;div&gt;</p>
+<p style="line-height: 116%; margin-bottom: 0.11in">&nbsp; &nbsp; &nbsp;
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &lt;h3
+class=&quot;font-bold text-lg&quot;&gt;Join our team&lt;/h3&gt;</p>
+<p style="line-height: 116%; margin-bottom: 0.11in">&nbsp; &nbsp; &nbsp;
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &lt;p class=&quot;text-xs
+text-purple-200 mt-1&quot;&gt;Interested in helping build OArt? Tell
+us about your skills and ideas.&lt;/p&gt;</p>
+<p style="line-height: 116%; margin-bottom: 0.11in">&nbsp; &nbsp; &nbsp;
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &lt;/div&gt;</p>
+<p style="line-height: 116%; margin-bottom: 0.11in">&nbsp; &nbsp; &nbsp;
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &lt;button
+onclick=&quot;showPage('faq')&quot; class=&quot;bg-white
+text-oart-purple text-xs font-semibold px-5 py-2.5 rounded-xl
+hover:bg-purple-50 transition-colors shrink-0&quot;&gt;</p>
+<p style="line-height: 116%; margin-bottom: 0.11in">&nbsp; &nbsp; &nbsp;
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; Contact Support</p>
+<p style="line-height: 116%; margin-bottom: 0.11in">&nbsp; &nbsp; &nbsp;
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &lt;/button&gt;</p>
+<p style="line-height: 116%; margin-bottom: 0.11in">&nbsp; &nbsp; &nbsp;
+&nbsp; &nbsp; &nbsp; &lt;/div&gt;</p>
+<p style="line-height: 116%; margin-bottom: 0.11in">&nbsp; &nbsp; &nbsp;
+&nbsp; &lt;/section&gt;</p>
+<p style="line-height: 116%; margin-bottom: 0.11in"><br/>
+<br/>
+
+</p>
+<p style="line-height: 116%; margin-bottom: 0.11in">&nbsp; &nbsp; &nbsp;
+&nbsp; &lt;!-- ================= PAGE 4: PROFILE =================
+--&gt;</p>
+<p style="line-height: 116%; margin-bottom: 0.11in">&nbsp; &nbsp; &nbsp;
+&nbsp; &lt;section id=&quot;page-profile&quot; class=&quot;page-content
+hidden space-y-8 py-4&quot;&gt;</p>
+<p style="line-height: 116%; margin-bottom: 0.11in">&nbsp; &nbsp; &nbsp;
+&nbsp; &nbsp; &nbsp; &lt;!-- Profile Header --&gt;</p>
+<p style="line-height: 116%; margin-bottom: 0.11in">&nbsp; &nbsp; &nbsp;
+&nbsp; &nbsp; &nbsp; &lt;div class=&quot;bg-white/70 backdrop-blur-sm
+border border-white/80 rounded-3xl p-6 sm:p-8 flex flex-col
+sm:flex-row items-center gap-6&quot;&gt;</p>
+<p style="line-height: 116%; margin-bottom: 0.11in">&nbsp; &nbsp; &nbsp;
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &lt;img
+src=&quot;https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&amp;fit=crop&amp;w=300&amp;q=80&quot;
+</p>
+<p style="line-height: 116%; margin-bottom: 0.11in">&nbsp; &nbsp; &nbsp;
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;alt=&quot;Profile
+Picture&quot; class=&quot;w-24 h-24 rounded-full object-cover
+border-4 border-white shadow-md&quot;&gt;</p>
+<p style="line-height: 116%; margin-bottom: 0.11in">&nbsp; &nbsp; &nbsp;
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &lt;div class=&quot;text-center
+sm:text-left space-y-1&quot;&gt;</p>
+<p style="line-height: 116%; margin-bottom: 0.11in">&nbsp; &nbsp; &nbsp;
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &lt;h1
+class=&quot;text-2xl font-bold text-oart-purple&quot;&gt;Artist
+Profile&lt;/h1&gt;</p>
+<p style="line-height: 116%; margin-bottom: 0.11in">&nbsp; &nbsp; &nbsp;
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &lt;p class=&quot;text-xs
+font-medium text-purple-700 bg-purple-100 px-2.5 py-0.5 rounded-full
+inline-block&quot;&gt;Digital Artist &amp; Illustrative Concept
+Creator&lt;/p&gt;</p>
+<p style="line-height: 116%; margin-bottom: 0.11in">&nbsp; &nbsp; &nbsp;
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &lt;p class=&quot;text-xs
+text-slate-600 pt-2 max-w-lg&quot;&gt;</p>
+<p style="line-height: 116%; margin-bottom: 0.11in">&nbsp; &nbsp; &nbsp;
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+Welcome to my OArt workspace! Exploring human-created digital
+paintings, mixed media, and open mural projects.</p>
+<p style="line-height: 116%; margin-bottom: 0.11in">&nbsp; &nbsp; &nbsp;
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &lt;/p&gt;</p>
+<p style="line-height: 116%; margin-bottom: 0.11in">&nbsp; &nbsp; &nbsp;
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &lt;/div&gt;</p>
+<p style="line-height: 116%; margin-bottom: 0.11in">&nbsp; &nbsp; &nbsp;
+&nbsp; &nbsp; &nbsp; &lt;/div&gt;</p>
+<p style="line-height: 116%; margin-bottom: 0.11in"><br/>
+<br/>
+
+</p>
+<p style="line-height: 116%; margin-bottom: 0.11in">&nbsp; &nbsp; &nbsp;
+&nbsp; &nbsp; &nbsp; &lt;div class=&quot;space-y-4&quot;&gt;</p>
+<p style="line-height: 116%; margin-bottom: 0.11in">&nbsp; &nbsp; &nbsp;
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &lt;h2 class=&quot;text-lg
+font-bold text-oart-purple&quot;&gt;Shared Portfolio&lt;/h2&gt;</p>
+<p style="line-height: 116%; margin-bottom: 0.11in">&nbsp; &nbsp; &nbsp;
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &lt;div class=&quot;grid
+grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4&quot;&gt;</p>
+<p style="line-height: 116%; margin-bottom: 0.11in">&nbsp; &nbsp; &nbsp;
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &lt;div
+class=&quot;bg-white rounded-2xl overflow-hidden shadow-sm border
+border-purple-100&quot;&gt;</p>
+<p style="line-height: 116%; margin-bottom: 0.11in">&nbsp; &nbsp; &nbsp;
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &lt;img
+src=&quot;https://images.unsplash.com/photo-1579783902614-a3fb3927b675?auto=format&amp;fit=crop&amp;w=600&amp;q=80&quot;
+class=&quot;w-full h-48 object-cover&quot;&gt;</p>
+<p style="line-height: 116%; margin-bottom: 0.11in">&nbsp; &nbsp; &nbsp;
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &lt;div
+class=&quot;p-3&quot;&gt;&lt;h3 class=&quot;font-semibold text-xs
+text-oart-purple&quot;&gt;Canvas Abstract I&lt;/h3&gt;&lt;/div&gt;</p>
+<p style="line-height: 116%; margin-bottom: 0.11in">&nbsp; &nbsp; &nbsp;
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &lt;/div&gt;</p>
+<p style="line-height: 116%; margin-bottom: 0.11in">&nbsp; &nbsp; &nbsp;
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &lt;div
+class=&quot;bg-white rounded-2xl overflow-hidden shadow-sm border
+border-purple-100&quot;&gt;</p>
+<p style="line-height: 116%; margin-bottom: 0.11in">&nbsp; &nbsp; &nbsp;
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &lt;img
+src=&quot;https://images.unsplash.com/photo-1541701494587-cb58502866ab?auto=format&amp;fit=crop&amp;w=600&amp;q=80&quot;
+class=&quot;w-full h-48 object-cover&quot;&gt;</p>
+<p style="line-height: 116%; margin-bottom: 0.11in">&nbsp; &nbsp; &nbsp;
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &lt;div
+class=&quot;p-3&quot;&gt;&lt;h3 class=&quot;font-semibold text-xs
+text-oart-purple&quot;&gt;Fluid Vibrance&lt;/h3&gt;&lt;/div&gt;</p>
+<p style="line-height: 116%; margin-bottom: 0.11in">&nbsp; &nbsp; &nbsp;
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &lt;/div&gt;</p>
+<p style="line-height: 116%; margin-bottom: 0.11in">&nbsp; &nbsp; &nbsp;
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &lt;div
+class=&quot;bg-white rounded-2xl overflow-hidden shadow-sm border
+border-purple-100&quot;&gt;</p>
+<p style="line-height: 116%; margin-bottom: 0.11in">&nbsp; &nbsp; &nbsp;
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &lt;img
+src=&quot;https://images.unsplash.com/photo-1513364776144-60967b0f800f?auto=format&amp;fit=crop&amp;w=600&amp;q=80&quot;
+class=&quot;w-full h-48 object-cover&quot;&gt;</p>
+<p style="line-height: 116%; margin-bottom: 0.11in">&nbsp; &nbsp; &nbsp;
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &lt;div
+class=&quot;p-3&quot;&gt;&lt;h3 class=&quot;font-semibold text-xs
+text-oart-purple&quot;&gt;Color Studies&lt;/h3&gt;&lt;/div&gt;</p>
+<p style="line-height: 116%; margin-bottom: 0.11in">&nbsp; &nbsp; &nbsp;
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &lt;/div&gt;</p>
+<p style="line-height: 116%; margin-bottom: 0.11in">&nbsp; &nbsp; &nbsp;
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &lt;/div&gt;</p>
+<p style="line-height: 116%; margin-bottom: 0.11in">&nbsp; &nbsp; &nbsp;
+&nbsp; &nbsp; &nbsp; &lt;/div&gt;</p>
+<p style="line-height: 116%; margin-bottom: 0.11in">&nbsp; &nbsp; &nbsp;
+&nbsp; &lt;/section&gt;</p>
+<p style="line-height: 116%; margin-bottom: 0.11in"><br/>
+<br/>
+
+</p>
+<p style="line-height: 116%; margin-bottom: 0.11in">&nbsp; &nbsp; &nbsp;
+&nbsp; &lt;!-- ================= PAGE 5: FAQ ================= --&gt;</p>
+<p style="line-height: 116%; margin-bottom: 0.11in">&nbsp; &nbsp; &nbsp;
+&nbsp; &lt;section id=&quot;page-faq&quot; class=&quot;page-content
+hidden space-y-8 py-4&quot;&gt;</p>
+<p style="line-height: 116%; margin-bottom: 0.11in">&nbsp; &nbsp; &nbsp;
+&nbsp; &nbsp; &nbsp; &lt;div class=&quot;text-center space-y-2
+max-w-xl mx-auto&quot;&gt;</p>
+<p style="line-height: 116%; margin-bottom: 0.11in">&nbsp; &nbsp; &nbsp;
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &lt;h1 class=&quot;text-3xl
+font-bold text-oart-purple&quot;&gt;Frequently asked questions&lt;/h1&gt;</p>
+<p style="line-height: 116%; margin-bottom: 0.11in">&nbsp; &nbsp; &nbsp;
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &lt;p class=&quot;text-xs
+text-slate-600&quot;&gt;Connecting with creators and sharing original
+work&lt;/p&gt;</p>
+<p style="line-height: 116%; margin-bottom: 0.11in">&nbsp; &nbsp; &nbsp;
+&nbsp; &nbsp; &nbsp; &lt;/div&gt;</p>
+<p style="line-height: 116%; margin-bottom: 0.11in"><br/>
+<br/>
+
+</p>
+<p style="line-height: 116%; margin-bottom: 0.11in">&nbsp; &nbsp; &nbsp;
+&nbsp; &nbsp; &nbsp; &lt;div class=&quot;max-w-3xl mx-auto
+space-y-4&quot;&gt;</p>
+<p style="line-height: 116%; margin-bottom: 0.11in">&nbsp; &nbsp; &nbsp;
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &lt;!-- Q1 --&gt;</p>
+<p style="line-height: 116%; margin-bottom: 0.11in">&nbsp; &nbsp; &nbsp;
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &lt;div class=&quot;bg-white
+rounded-2xl p-5 shadow-sm border border-purple-100 space-y-2&quot;&gt;</p>
+<p style="line-height: 116%; margin-bottom: 0.11in">&nbsp; &nbsp; &nbsp;
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &lt;h3
+class=&quot;font-bold text-sm text-oart-purple&quot;&gt;How can I
+connect with other creators?&lt;/h3&gt;</p>
+<p style="line-height: 116%; margin-bottom: 0.11in">&nbsp; &nbsp; &nbsp;
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &lt;p class=&quot;text-xs
+text-slate-600 leading-relaxed&quot;&gt;</p>
+<p style="line-height: 116%; margin-bottom: 0.11in">&nbsp; &nbsp; &nbsp;
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+Explore artwork to find people with shared interests and connect
+through creative projects.</p>
+<p style="line-height: 116%; margin-bottom: 0.11in">&nbsp; &nbsp; &nbsp;
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &lt;/p&gt;</p>
+<p style="line-height: 116%; margin-bottom: 0.11in">&nbsp; &nbsp; &nbsp;
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &lt;/div&gt;</p>
+<p style="line-height: 116%; margin-bottom: 0.11in"><br/>
+<br/>
+
+</p>
+<p style="line-height: 116%; margin-bottom: 0.11in">&nbsp; &nbsp; &nbsp;
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &lt;!-- Q2 --&gt;</p>
+<p style="line-height: 116%; margin-bottom: 0.11in">&nbsp; &nbsp; &nbsp;
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &lt;div class=&quot;bg-white
+rounded-2xl p-5 shadow-sm border border-purple-100 space-y-2&quot;&gt;</p>
+<p style="line-height: 116%; margin-bottom: 0.11in">&nbsp; &nbsp; &nbsp;
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &lt;h3
+class=&quot;font-bold text-sm text-oart-purple&quot;&gt;What should I
+share with the community?&lt;/h3&gt;</p>
+<p style="line-height: 116%; margin-bottom: 0.11in">&nbsp; &nbsp; &nbsp;
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &lt;p class=&quot;text-xs
+text-slate-600 leading-relaxed&quot;&gt;</p>
+<p style="line-height: 116%; margin-bottom: 0.11in">&nbsp; &nbsp; &nbsp;
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; Share
+your own creative work, introduce your interests, and invite others
+to collaborate.</p>
+<p style="line-height: 116%; margin-bottom: 0.11in">&nbsp; &nbsp; &nbsp;
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &lt;/p&gt;</p>
+<p style="line-height: 116%; margin-bottom: 0.11in">&nbsp; &nbsp; &nbsp;
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &lt;/div&gt;</p>
+<p style="line-height: 116%; margin-bottom: 0.11in"><br/>
+<br/>
+
+</p>
+<p style="line-height: 116%; margin-bottom: 0.11in">&nbsp; &nbsp; &nbsp;
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &lt;!-- Q3 --&gt;</p>
+<p style="line-height: 116%; margin-bottom: 0.11in">&nbsp; &nbsp; &nbsp;
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &lt;div class=&quot;bg-white
+rounded-2xl p-5 shadow-sm border border-purple-100 space-y-2&quot;&gt;</p>
+<p style="line-height: 116%; margin-bottom: 0.11in">&nbsp; &nbsp; &nbsp;
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &lt;h3
+class=&quot;font-bold text-sm text-oart-purple&quot;&gt;How can I
+build positive connections?&lt;/h3&gt;</p>
+<p style="line-height: 116%; margin-bottom: 0.11in">&nbsp; &nbsp; &nbsp;
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &lt;p class=&quot;text-xs
+text-slate-600 leading-relaxed&quot;&gt;</p>
+<p style="line-height: 116%; margin-bottom: 0.11in">&nbsp; &nbsp; &nbsp;
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; Be
+respectful, give constructive feedback, and ask permission before
+sharing someone else's work.</p>
+<p style="line-height: 116%; margin-bottom: 0.11in">&nbsp; &nbsp; &nbsp;
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &lt;/p&gt;</p>
+<p style="line-height: 116%; margin-bottom: 0.11in">&nbsp; &nbsp; &nbsp;
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &lt;/div&gt;</p>
+<p style="line-height: 116%; margin-bottom: 0.11in"><br/>
+<br/>
+
+</p>
+<p style="line-height: 116%; margin-bottom: 0.11in">&nbsp; &nbsp; &nbsp;
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &lt;!-- Q4: AI Policy Highlight
+--&gt;</p>
+<p style="line-height: 116%; margin-bottom: 0.11in">&nbsp; &nbsp; &nbsp;
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &lt;div class=&quot;bg-amber-50/80
+border border-amber-200 rounded-2xl p-5 space-y-2&quot;&gt;</p>
+<p style="line-height: 116%; margin-bottom: 0.11in">&nbsp; &nbsp; &nbsp;
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &lt;div class=&quot;flex
+items-center gap-2 text-amber-800 font-bold text-sm&quot;&gt;</p>
+<p style="line-height: 116%; margin-bottom: 0.11in">&nbsp; &nbsp; &nbsp;
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &lt;i
+class=&quot;fa-solid fa-triangle-exclamation&quot;&gt;&lt;/i&gt;</p>
+<p style="line-height: 116%; margin-bottom: 0.11in">&nbsp; &nbsp; &nbsp;
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+&lt;h3&gt;Can I post AI-generated content?&lt;/h3&gt;</p>
+<p style="line-height: 116%; margin-bottom: 0.11in">&nbsp; &nbsp; &nbsp;
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &lt;/div&gt;</p>
+<p style="line-height: 116%; margin-bottom: 0.11in">&nbsp; &nbsp; &nbsp;
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &lt;p class=&quot;text-xs
+text-amber-900 leading-relaxed font-medium&quot;&gt;</p>
+<p style="line-height: 116%; margin-bottom: 0.11in">&nbsp; &nbsp; &nbsp;
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+&lt;strong&gt;No.&lt;/strong&gt; OArt does not allow content
+generated wholly or partly by AI, including text, images, audio, and
+video. Unsure about a tool? Ask support before posting.</p>
+<p style="line-height: 116%; margin-bottom: 0.11in">&nbsp; &nbsp; &nbsp;
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &lt;/p&gt;</p>
+<p style="line-height: 116%; margin-bottom: 0.11in">&nbsp; &nbsp; &nbsp;
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &lt;/div&gt;</p>
+<p style="line-height: 116%; margin-bottom: 0.11in">&nbsp; &nbsp; &nbsp;
+&nbsp; &nbsp; &nbsp; &lt;/div&gt;</p>
+<p style="line-height: 116%; margin-bottom: 0.11in">&nbsp; &nbsp; &nbsp;
+&nbsp; &lt;/section&gt;</p>
+<p style="line-height: 116%; margin-bottom: 0.11in"><br/>
+<br/>
+
+</p>
+<p style="line-height: 116%; margin-bottom: 0.11in">&nbsp; &nbsp; &nbsp;
+&nbsp; &lt;!-- ================= PAGE 6: USER GUIDE =================
+--&gt;</p>
+<p style="line-height: 116%; margin-bottom: 0.11in">&nbsp; &nbsp; &nbsp;
+&nbsp; &lt;section id=&quot;page-guide&quot; class=&quot;page-content
+hidden space-y-8 py-4&quot;&gt;</p>
+<p style="line-height: 116%; margin-bottom: 0.11in">&nbsp; &nbsp; &nbsp;
+&nbsp; &nbsp; &nbsp; &lt;div class=&quot;space-y-1&quot;&gt;</p>
+<p style="line-height: 116%; margin-bottom: 0.11in">&nbsp; &nbsp; &nbsp;
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &lt;h1 class=&quot;text-3xl
+font-bold text-oart-purple&quot;&gt;OArt user guide&lt;/h1&gt;</p>
+<p style="line-height: 116%; margin-bottom: 0.11in">&nbsp; &nbsp; &nbsp;
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &lt;p class=&quot;text-xs
+text-slate-600 font-medium&quot;&gt;Getting started with the creative
+community&lt;/p&gt;</p>
+<p style="line-height: 116%; margin-bottom: 0.11in">&nbsp; &nbsp; &nbsp;
+&nbsp; &nbsp; &nbsp; &lt;/div&gt;</p>
+<p style="line-height: 116%; margin-bottom: 0.11in"><br/>
+<br/>
+
+</p>
+<p style="line-height: 116%; margin-bottom: 0.11in">&nbsp; &nbsp; &nbsp;
+&nbsp; &nbsp; &nbsp; &lt;!-- Steps Grid --&gt;</p>
+<p style="line-height: 116%; margin-bottom: 0.11in">&nbsp; &nbsp; &nbsp;
+&nbsp; &nbsp; &nbsp; &lt;div class=&quot;grid grid-cols-1
+sm:grid-cols-2 md:grid-cols-4 gap-4&quot;&gt;</p>
+<p style="line-height: 116%; margin-bottom: 0.11in">&nbsp; &nbsp; &nbsp;
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &lt;!-- Step 1 --&gt;</p>
+<p style="line-height: 116%; margin-bottom: 0.11in">&nbsp; &nbsp; &nbsp;
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &lt;div class=&quot;bg-white p-5
+rounded-2xl shadow-sm border border-purple-100 flex flex-col
+justify-between space-y-4&quot;&gt;</p>
+<p style="line-height: 116%; margin-bottom: 0.11in">&nbsp; &nbsp; &nbsp;
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &lt;div
+class=&quot;space-y-2&quot;&gt;</p>
+<p style="line-height: 116%; margin-bottom: 0.11in">&nbsp; &nbsp; &nbsp;
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &lt;span
+class=&quot;w-7 h-7 bg-purple-100 text-oart-purple rounded-full flex
+items-center justify-center font-bold text-xs&quot;&gt;1&lt;/span&gt;</p>
+<p style="line-height: 116%; margin-bottom: 0.11in">&nbsp; &nbsp; &nbsp;
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &lt;h3
+class=&quot;font-bold text-xs text-oart-purple&quot;&gt;Explore the
+community&lt;/h3&gt;</p>
+<p style="line-height: 116%; margin-bottom: 0.11in">&nbsp; &nbsp; &nbsp;
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &lt;/div&gt;</p>
+<p style="line-height: 116%; margin-bottom: 0.11in">&nbsp; &nbsp; &nbsp;
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &lt;p class=&quot;text-xs
+text-slate-600 leading-relaxed&quot;&gt;Browse artwork and projects
+on Home.&lt;/p&gt;</p>
+<p style="line-height: 116%; margin-bottom: 0.11in">&nbsp; &nbsp; &nbsp;
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &lt;/div&gt;</p>
+<p style="line-height: 116%; margin-bottom: 0.11in"><br/>
+<br/>
+
+</p>
+<p style="line-height: 116%; margin-bottom: 0.11in">&nbsp; &nbsp; &nbsp;
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &lt;!-- Step 2 --&gt;</p>
+<p style="line-height: 116%; margin-bottom: 0.11in">&nbsp; &nbsp; &nbsp;
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &lt;div class=&quot;bg-white p-5
+rounded-2xl shadow-sm border border-purple-100 flex flex-col
+justify-between space-y-4&quot;&gt;</p>
+<p style="line-height: 116%; margin-bottom: 0.11in">&nbsp; &nbsp; &nbsp;
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &lt;div
+class=&quot;space-y-2&quot;&gt;</p>
+<p style="line-height: 116%; margin-bottom: 0.11in">&nbsp; &nbsp; &nbsp;
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &lt;span
+class=&quot;w-7 h-7 bg-purple-100 text-oart-purple rounded-full flex
+items-center justify-center font-bold text-xs&quot;&gt;2&lt;/span&gt;</p>
+<p style="line-height: 116%; margin-bottom: 0.11in">&nbsp; &nbsp; &nbsp;
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &lt;h3
+class=&quot;font-bold text-xs text-oart-purple&quot;&gt;Share your
+original work&lt;/h3&gt;</p>
+<p style="line-height: 116%; margin-bottom: 0.11in">&nbsp; &nbsp; &nbsp;
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &lt;/div&gt;</p>
+<p style="line-height: 116%; margin-bottom: 0.11in">&nbsp; &nbsp; &nbsp;
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &lt;p class=&quot;text-xs
+text-slate-600 leading-relaxed&quot;&gt;Introduce your interests and
+show your own creations.&lt;/p&gt;</p>
+<p style="line-height: 116%; margin-bottom: 0.11in">&nbsp; &nbsp; &nbsp;
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &lt;/div&gt;</p>
+<p style="line-height: 116%; margin-bottom: 0.11in"><br/>
+<br/>
+
+</p>
+<p style="line-height: 116%; margin-bottom: 0.11in">&nbsp; &nbsp; &nbsp;
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &lt;!-- Step 3 --&gt;</p>
+<p style="line-height: 116%; margin-bottom: 0.11in">&nbsp; &nbsp; &nbsp;
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &lt;div class=&quot;bg-white p-5
+rounded-2xl shadow-sm border border-purple-100 flex flex-col
+justify-between space-y-4&quot;&gt;</p>
+<p style="line-height: 116%; margin-bottom: 0.11in">&nbsp; &nbsp; &nbsp;
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &lt;div
+class=&quot;space-y-2&quot;&gt;</p>
+<p style="line-height: 116%; margin-bottom: 0.11in">&nbsp; &nbsp; &nbsp;
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &lt;span
+class=&quot;w-7 h-7 bg-purple-100 text-oart-purple rounded-full flex
+items-center justify-center font-bold text-xs&quot;&gt;3&lt;/span&gt;</p>
+<p style="line-height: 116%; margin-bottom: 0.11in">&nbsp; &nbsp; &nbsp;
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &lt;h3
+class=&quot;font-bold text-xs text-oart-purple&quot;&gt;Connect and
+collaborate&lt;/h3&gt;</p>
+<p style="line-height: 116%; margin-bottom: 0.11in">&nbsp; &nbsp; &nbsp;
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &lt;/div&gt;</p>
+<p style="line-height: 116%; margin-bottom: 0.11in">&nbsp; &nbsp; &nbsp;
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &lt;p class=&quot;text-xs
+text-slate-600 leading-relaxed&quot;&gt;Find a project that matches
+your creative interests.&lt;/p&gt;</p>
+<p style="line-height: 116%; margin-bottom: 0.11in">&nbsp; &nbsp; &nbsp;
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &lt;/div&gt;</p>
+<p style="line-height: 116%; margin-bottom: 0.11in"><br/>
+<br/>
+
+</p>
+<p style="line-height: 116%; margin-bottom: 0.11in">&nbsp; &nbsp; &nbsp;
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &lt;!-- Step 4 --&gt;</p>
+<p style="line-height: 116%; margin-bottom: 0.11in">&nbsp; &nbsp; &nbsp;
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &lt;div class=&quot;bg-white p-5
+rounded-2xl shadow-sm border border-purple-100 flex flex-col
+justify-between space-y-4&quot;&gt;</p>
+<p style="line-height: 116%; margin-bottom: 0.11in">&nbsp; &nbsp; &nbsp;
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &lt;div
+class=&quot;space-y-2&quot;&gt;</p>
+<p style="line-height: 116%; margin-bottom: 0.11in">&nbsp; &nbsp; &nbsp;
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &lt;span
+class=&quot;w-7 h-7 bg-purple-100 text-oart-purple rounded-full flex
+items-center justify-center font-bold text-xs&quot;&gt;4&lt;/span&gt;</p>
+<p style="line-height: 116%; margin-bottom: 0.11in">&nbsp; &nbsp; &nbsp;
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &lt;h3
+class=&quot;font-bold text-xs text-oart-purple&quot;&gt;Keep
+conversations constructive&lt;/h3&gt;</p>
+<p style="line-height: 116%; margin-bottom: 0.11in">&nbsp; &nbsp; &nbsp;
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &lt;/div&gt;</p>
+<p style="line-height: 116%; margin-bottom: 0.11in">&nbsp; &nbsp; &nbsp;
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &lt;p class=&quot;text-xs
+text-slate-600 leading-relaxed&quot;&gt;Give useful feedback. Ask
+permission before resharing.&lt;/p&gt;</p>
+<p style="line-height: 116%; margin-bottom: 0.11in">&nbsp; &nbsp; &nbsp;
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &lt;/div&gt;</p>
+<p style="line-height: 116%; margin-bottom: 0.11in">&nbsp; &nbsp; &nbsp;
+&nbsp; &nbsp; &nbsp; &lt;/div&gt;</p>
+<p style="line-height: 116%; margin-bottom: 0.11in"><br/>
+<br/>
+
+</p>
+<p style="line-height: 116%; margin-bottom: 0.11in">&nbsp; &nbsp; &nbsp;
+&nbsp; &nbsp; &nbsp; &lt;!-- Guidelines Container --&gt;</p>
+<p style="line-height: 116%; margin-bottom: 0.11in">&nbsp; &nbsp; &nbsp;
+&nbsp; &nbsp; &nbsp; &lt;div class=&quot;grid grid-cols-1
+md:grid-cols-2 gap-6 pt-2&quot;&gt;</p>
+<p style="line-height: 116%; margin-bottom: 0.11in">&nbsp; &nbsp; &nbsp;
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &lt;div class=&quot;bg-white/70
+p-6 rounded-2xl border border-white shadow-sm space-y-2&quot;&gt;</p>
+<p style="line-height: 116%; margin-bottom: 0.11in">&nbsp; &nbsp; &nbsp;
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &lt;h3
+class=&quot;font-bold text-sm text-oart-purple&quot;&gt;Before you
+share&lt;/h3&gt;</p>
+<p style="line-height: 116%; margin-bottom: 0.11in">&nbsp; &nbsp; &nbsp;
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &lt;p class=&quot;text-xs
+text-slate-600 leading-relaxed&quot;&gt;</p>
+<p style="line-height: 116%; margin-bottom: 0.11in">&nbsp; &nbsp; &nbsp;
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; Share
+human-created work only. OArt does not allow content generated wholly
+or partly by AI.</p>
+<p style="line-height: 116%; margin-bottom: 0.11in">&nbsp; &nbsp; &nbsp;
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &lt;/p&gt;</p>
+<p style="line-height: 116%; margin-bottom: 0.11in">&nbsp; &nbsp; &nbsp;
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &lt;/div&gt;</p>
+<p style="line-height: 116%; margin-bottom: 0.11in">&nbsp; &nbsp; &nbsp;
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &lt;div class=&quot;bg-white/70
+p-6 rounded-2xl border border-white shadow-sm space-y-2&quot;&gt;</p>
+<p style="line-height: 116%; margin-bottom: 0.11in">&nbsp; &nbsp; &nbsp;
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &lt;h3
+class=&quot;font-bold text-sm text-oart-purple&quot;&gt;Need
+help?&lt;/h3&gt;</p>
+<p style="line-height: 116%; margin-bottom: 0.11in">&nbsp; &nbsp; &nbsp;
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &lt;p class=&quot;text-xs
+text-slate-600 leading-relaxed&quot;&gt;</p>
+<p style="line-height: 116%; margin-bottom: 0.11in">&nbsp; &nbsp; &nbsp;
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; Read
+the FAQ or ask support before you post.</p>
+<p style="line-height: 116%; margin-bottom: 0.11in">&nbsp; &nbsp; &nbsp;
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &lt;/p&gt;</p>
+<p style="line-height: 116%; margin-bottom: 0.11in">&nbsp; &nbsp; &nbsp;
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &lt;/div&gt;</p>
+<p style="line-height: 116%; margin-bottom: 0.11in">&nbsp; &nbsp; &nbsp;
+&nbsp; &nbsp; &nbsp; &lt;/div&gt;</p>
+<p style="line-height: 116%; margin-bottom: 0.11in">&nbsp; &nbsp; &nbsp;
+&nbsp; &lt;/section&gt;</p>
+<p style="line-height: 116%; margin-bottom: 0.11in"><br/>
+<br/>
+
+</p>
+<p style="line-height: 116%; margin-bottom: 0.11in">&nbsp; &nbsp;
+&lt;/main&gt;</p>
+<p style="line-height: 116%; margin-bottom: 0.11in"><br/>
+<br/>
+
+</p>
+<p style="line-height: 116%; margin-bottom: 0.11in">&nbsp; &nbsp;
+&lt;!-- Global Website Footer --&gt;</p>
+<p style="line-height: 116%; margin-bottom: 0.11in">&nbsp; &nbsp;
+&lt;footer class=&quot;bg-[#EAE1F4] border-t border-purple-200/60
+mt-auto py-6&quot;&gt;</p>
+<p style="line-height: 116%; margin-bottom: 0.11in">&nbsp; &nbsp; &nbsp;
+&nbsp; &lt;div class=&quot;max-w-7xl mx-auto px-6 flex flex-col
+sm:flex-row items-center justify-between gap-4 text-xs
+text-slate-600&quot;&gt;</p>
+<p style="line-height: 116%; margin-bottom: 0.11in">&nbsp; &nbsp; &nbsp;
+&nbsp; &nbsp; &nbsp; &lt;div class=&quot;flex items-center gap-6&quot;&gt;</p>
+<p style="line-height: 116%; margin-bottom: 0.11in">&nbsp; &nbsp; &nbsp;
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &lt;a href=&quot;#&quot;
+onclick=&quot;showPage('home')&quot; class=&quot;font-serif text-xl
+font-bold text-oart-purple&quot;&gt;OArt&lt;/a&gt;</p>
+<p style="line-height: 116%; margin-bottom: 0.11in">&nbsp; &nbsp; &nbsp;
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &lt;span&gt;Arts, Ideas,
+Connections&lt;/span&gt;</p>
+<p style="line-height: 116%; margin-bottom: 0.11in">&nbsp; &nbsp; &nbsp;
+&nbsp; &nbsp; &nbsp; &lt;/div&gt;</p>
+<p style="line-height: 116%; margin-bottom: 0.11in">&nbsp; &nbsp; &nbsp;
+&nbsp; &nbsp; &nbsp; &lt;div&gt;</p>
+<p style="line-height: 116%; margin-bottom: 0.11in">&nbsp; &nbsp; &nbsp;
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; Contact support: &lt;a
+href=&quot;mailto:oart.support@mail.com&quot; class=&quot;text-oart-purple
+font-medium hover:underline&quot;&gt;oart.support@mail.com&lt;/a&gt;</p>
+<p style="line-height: 116%; margin-bottom: 0.11in">&nbsp; &nbsp; &nbsp;
+&nbsp; &nbsp; &nbsp; &lt;/div&gt;</p>
+<p style="line-height: 116%; margin-bottom: 0.11in">&nbsp; &nbsp; &nbsp;
+&nbsp; &lt;/div&gt;</p>
+<p style="line-height: 116%; margin-bottom: 0.11in">&nbsp; &nbsp;
+&lt;/footer&gt;</p>
+<p style="line-height: 116%; margin-bottom: 0.11in"><br/>
+<br/>
+
+</p>
+<p style="line-height: 116%; margin-bottom: 0.11in">&nbsp; &nbsp;
+&lt;script&gt;</p>
+<p style="line-height: 116%; margin-bottom: 0.11in">&nbsp; &nbsp; &nbsp;
+&nbsp; function showPage(pageId) {</p>
+<p style="line-height: 116%; margin-bottom: 0.11in">&nbsp; &nbsp; &nbsp;
+&nbsp; &nbsp; &nbsp; // Hide all pages</p>
+<p style="line-height: 116%; margin-bottom: 0.11in">&nbsp; &nbsp; &nbsp;
+&nbsp; &nbsp; &nbsp;
+document.querySelectorAll('.page-content').forEach(page =&gt; {</p>
+<p style="line-height: 116%; margin-bottom: 0.11in">&nbsp; &nbsp; &nbsp;
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; page.classList.add('hidden');</p>
+<p style="line-height: 116%; margin-bottom: 0.11in">&nbsp; &nbsp; &nbsp;
+&nbsp; &nbsp; &nbsp; });</p>
+<p style="line-height: 116%; margin-bottom: 0.11in"><br/>
+<br/>
+
+</p>
+<p style="line-height: 116%; margin-bottom: 0.11in">&nbsp; &nbsp; &nbsp;
+&nbsp; &nbsp; &nbsp; // Show selected page</p>
+<p style="line-height: 116%; margin-bottom: 0.11in">&nbsp; &nbsp; &nbsp;
+&nbsp; &nbsp; &nbsp; const activePage =
+document.getElementById(`page-${pageId}`);</p>
+<p style="line-height: 116%; margin-bottom: 0.11in">&nbsp; &nbsp; &nbsp;
+&nbsp; &nbsp; &nbsp; if (activePage) {</p>
+<p style="line-height: 116%; margin-bottom: 0.11in">&nbsp; &nbsp; &nbsp;
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+activePage.classList.remove('hidden');</p>
+<p style="line-height: 116%; margin-bottom: 0.11in">&nbsp; &nbsp; &nbsp;
+&nbsp; &nbsp; &nbsp; }</p>
+<p style="line-height: 116%; margin-bottom: 0.11in"><br/>
+<br/>
+
+</p>
+<p style="line-height: 116%; margin-bottom: 0.11in">&nbsp; &nbsp; &nbsp;
+&nbsp; &nbsp; &nbsp; // Update nav active states</p>
+<p style="line-height: 116%; margin-bottom: 0.11in">&nbsp; &nbsp; &nbsp;
+&nbsp; &nbsp; &nbsp;
+document.querySelectorAll('.nav-link').forEach(btn =&gt; {</p>
+<p style="line-height: 116%; margin-bottom: 0.11in">&nbsp; &nbsp; &nbsp;
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+btn.classList.remove('text-oart-purple', 'border-oart-purple',
+'font-semibold');</p>
+<p style="line-height: 116%; margin-bottom: 0.11in">&nbsp; &nbsp; &nbsp;
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+btn.classList.add('text-slate-600', 'border-transparent');</p>
+<p style="line-height: 116%; margin-bottom: 0.11in">&nbsp; &nbsp; &nbsp;
+&nbsp; &nbsp; &nbsp; });</p>
+<p style="line-height: 116%; margin-bottom: 0.11in"><br/>
+<br/>
+
+</p>
+<p style="line-height: 116%; margin-bottom: 0.11in">&nbsp; &nbsp; &nbsp;
+&nbsp; &nbsp; &nbsp; const activeNavBtns =
+document.querySelectorAll(`[data-page=&quot;${pageId}&quot;]`);</p>
+<p style="line-height: 116%; margin-bottom: 0.11in">&nbsp; &nbsp; &nbsp;
+&nbsp; &nbsp; &nbsp; activeNavBtns.forEach(btn =&gt; {</p>
+<p style="line-height: 116%; margin-bottom: 0.11in">&nbsp; &nbsp; &nbsp;
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+btn.classList.add('text-oart-purple', 'border-oart-purple',
+'font-semibold');</p>
+<p style="line-height: 116%; margin-bottom: 0.11in">&nbsp; &nbsp; &nbsp;
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+btn.classList.remove('text-slate-600', 'border-transparent');</p>
+<p style="line-height: 116%; margin-bottom: 0.11in">&nbsp; &nbsp; &nbsp;
+&nbsp; &nbsp; &nbsp; });</p>
+<p style="line-height: 116%; margin-bottom: 0.11in"><br/>
+<br/>
+
+</p>
+<p style="line-height: 116%; margin-bottom: 0.11in">&nbsp; &nbsp; &nbsp;
+&nbsp; &nbsp; &nbsp; window.scrollTo({ top: 0, behavior: 'smooth' });</p>
+<p style="line-height: 116%; margin-bottom: 0.11in">&nbsp; &nbsp; &nbsp;
+&nbsp; }</p>
+<p style="line-height: 116%; margin-bottom: 0.11in">&nbsp; &nbsp;
+&lt;/script&gt;</p>
+<p style="line-height: 116%; margin-bottom: 0.11in">&lt;/body&gt;</p>
+<p style="line-height: 116%; margin-bottom: 0.11in">&lt;/html&gt;</p>
+<p style="line-height: 116%; margin-bottom: 0.11in"><br/>
+<br/>
+
+</p>
+</body>
+</html>
